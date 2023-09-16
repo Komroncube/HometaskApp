@@ -123,5 +123,31 @@ namespace Hometask
         {
             return int.TryParse(Console.ReadLine(), out number);
         }
+        public string MaximumNumber(string num, int[] change)
+        {
+            foreach(int i in change) { Console.Write(i); }
+            Console.WriteLine();
+            string res = "";
+            for (int i = 0; i < num.Length; i++)
+            {
+                int pos = Int32.Parse(num[i].ToString());
+                int val = Int32.Parse(num[i].ToString());
+                if (val < change[pos])
+                {
+                    res += change[pos].ToString();
+                    change[pos] = val;
+                }
+                else
+                {
+                    res += num[i];
+                }
+            }
+            foreach(int i in  change)
+            {
+                Console.Write(i);
+            }
+            Console.WriteLine();
+            return res;
+        }
     }
 }
