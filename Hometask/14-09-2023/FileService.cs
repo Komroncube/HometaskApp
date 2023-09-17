@@ -10,11 +10,11 @@ namespace Hometask._14_09_2023
     {
         public static void AddCard(Card card)
         {
-            string path = FileConfig.Path + FileConfig.Dirname;
+            string path = FileConfig.Path +@"\"+ FileConfig.Dirname;
 
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
-            path += FileConfig.CardData;
+            path += @"\"+ FileConfig.CardData;
             if(!File.Exists(path))
                 File.Create(path);
             string[] lines = File.ReadAllLines(path);
@@ -47,11 +47,11 @@ namespace Hometask._14_09_2023
         }
         public static Card? GetCard(string cardId)
         {
-            string path = FileConfig.Path + FileConfig.Dirname;
+            string path = FileConfig.Path + @"\"+  FileConfig.Dirname;
 
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
-            path += FileConfig.CardData;
+            path += @"\" + FileConfig.CardData;
             if (!File.Exists(path))
                 File.Create(path);
             string[] lines = File.ReadAllLines(path);
@@ -72,13 +72,15 @@ namespace Hometask._14_09_2023
         }
         public static void UpdateCard (Card card)
         {
-            string path = FileConfig.Path + FileConfig.Dirname;
+            string path = FileConfig.Path + @"\" + FileConfig.Dirname;
 
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
-            path += FileConfig.CardData;
+
+            path += @"\" + FileConfig.CardData;
             if (!File.Exists(path))
                 File.Create(path);
+
             string[] lines = File.ReadAllLines(path);
             var debitcards = new List<Card>();
             foreach (string line in lines)
@@ -107,11 +109,12 @@ namespace Hometask._14_09_2023
         }
         public static void AddUser(User user)
         {
-            string path = FileConfig.Path + FileConfig.Dirname;
+            string path = FileConfig.Path + @"\" + FileConfig.Dirname;
 
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
-            path += FileConfig.UserData;
+
+            path += @"\" + FileConfig.UserData;
             if (!File.Exists(path))
                 File.Create(path);
             string[] lines = File.ReadAllLines(path);
