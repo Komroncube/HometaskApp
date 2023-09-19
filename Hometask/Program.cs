@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Hometask;
+using Hometask._18_09_2023;
 using Hometask.Collections;
 
 //Console.WriteLine("Hello, World!");
@@ -11,7 +12,7 @@ solution.Problem4();
 solution.Problem1_New();
 Console.WriteLine(solution.MaximumNumber("132",new int[] { 9, 8, 5, 0, 3, 6, 4, 2, 6, 8}));*/
 
-int[][] jaggedArray = new int[2][];
+/*int[][] jaggedArray = new int[2][];
 jaggedArray[0] = new int[] { 31 };
 jaggedArray[1] = new int[] { 28, 29 };
 jaggedArray.YangiExtensionMethod(1, 7);
@@ -27,4 +28,9 @@ for(int i = 0; i < len; i++)
     }
     Console.WriteLine();
 
-}
+}*/
+
+RegexHometask regex = new RegexHometask();
+regex.GetEmail();
+regex.Replace("AA@%^&CC");
+regex.Replace("w3source.com");
