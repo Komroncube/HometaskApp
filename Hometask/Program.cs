@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Hometask;
 using Hometask._18_09_2023;
+using Hometask._19_09_2023;
 using Hometask.Collections;
 
 //Console.WriteLine("Hello, World!");
@@ -30,7 +31,28 @@ for(int i = 0; i < len; i++)
 
 }*/
 
-RegexHometask regex = new RegexHometask();
+/*RegexHometask regex = new RegexHometask();
 regex.GetEmail();
 regex.Replace("AA@%^&CC");
-regex.Replace("w3source.com");
+regex.Replace("w3source.com");*/
+
+//19-09-2023
+/*FileSearcher fileSearcher = new FileSearcher();
+fileSearcher.GetPathOfFile();*/
+
+//data yozib olish uchun
+/*using(FileStream file = new FileStream(@"fizika\baza.txt", FileMode.Open))
+{
+    using(StreamWriter writer = new StreamWriter(file))
+    {
+        for(int i = 0; i<100; i++)
+        {
+            writer.WriteLine(i);
+        }
+    }
+}    */
+/*
+TestForStudents testForStudents = new TestForStudents();
+testForStudents.CreateTestForStudent();*/
+ConsoleCMD console =  new ConsoleCMD();
+console.RunTerminal();
