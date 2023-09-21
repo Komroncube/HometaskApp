@@ -3,6 +3,7 @@ using Hometask;
 using Hometask._18_09_2023;
 using Hometask._19_09_2023;
 using Hometask.Collections;
+using System.Threading.Channels;
 
 //Console.WriteLine("Hello, World!");
 /*var solution = new SolutionFor_12_09_2023();
@@ -54,5 +55,7 @@ fileSearcher.GetPathOfFile();*/
 /*
 TestForStudents testForStudents = new TestForStudents();
 testForStudents.CreateTestForStudent();*/
-ConsoleCMD console =  new ConsoleCMD();
-console.RunTerminal();
+/*ConsoleCMD console =  new ConsoleCMD();
+console.RunTerminal();*/
+//ExcelData.AddData();
+ExcelData.ReadData("A1", "D4");
