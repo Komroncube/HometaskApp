@@ -9,6 +9,9 @@
 
   <ItemGroup>
     <PackageReference Include="EPPlus" Version="6.2.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
 </Project>
