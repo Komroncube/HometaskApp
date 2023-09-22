@@ -1,0 +1,41 @@
+<EVENT>
+  <DATA>
+    <AA siteKey="8a52acdd377bc40501377f7366c16bd0">
+      <DD siteKey="8a52acdd377bc40501377f7366c16bd1">
+         <SMT siteKey="8a52acdd377bc40501377f7366c26bd8">
+        </SMT>
+        <DDStatus siteKey="8a52acdd377bc40501377f7366c16bd2">
+        </DDStatus>
+        <Address id="{http://www.site.com/rr}address_value_entity" siteKey="8a52acdd377bc40501377f7366c26bd3">
+        </Address>
+        <Address id="{http://www.site.com/rr}address_value_entity" siteKey="8a52acdd377bc40501377f7366c26bd4">
+          <QQ id="{http://www.site.com/rr}value_QQ_entity" siteKey="8a52acdd377bc40501377f7366c26bd5">
+          </QQ>
+          <CC siteKey="8a52acdd377bc40501377f7366c26bd6">
+            <CC_LAT></CC_LAT>
+            <CC_LONG></CC_LONG>
+          </CC>
+        </Address>
+        <Address id="{http://www.site.com/rr}address_value_entity" siteKey="8a52acdd377bc40501377f7366c26bd7">
+          <ZZ>BUSINESS</ZZ>
+        </Address>
+      </DD>
+      <GG siteKey="8a52acdd377bc40501377f7366c36bd9">
+        <LL>false</LL>
+        <ZZ>PPCC</ZZ>
+        <Address id="{http://www.site.com/rr}address_value_entity" siteKey="8a52acdd377bc40501377f7366c36bda">
+          <ZZ>HOME</ZZ>
+        </Address>
+        <Phone id="{http://www.site.com/rr}phone_value_entity" siteKey="8a52acdd377bc40501377f7366c36bdb">
+          <ZZ>HOME</ZZ>
+        </Phone>
+      </GG>
+      <MM siteKey="8a52acdd377bc40501377f7366c36bdc">
+        <OO siteKey="8a52acdd377bc40501377f7366c36bdd">
+        </OO>
+        <UCRCode id="{http://www.site.com/rr}er_entity" siteKey="8a52acdd377a6eb601377a6f05b501e2">
+        </UCRCode>
+      </MM>
+    </AA>
+  </DATA>
+</EVENT>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root testAttr="testValue">
+  <result>
+    <child>data1</child>
+    <child>A1343358848.646</child>
+    <child>
+		<internal>
+           <data>one</data>
+           <data>two</data>
+           <unique>Z1343358848.646</unique>
+        </internal>
+    </child>
+  </result>
+</root>
