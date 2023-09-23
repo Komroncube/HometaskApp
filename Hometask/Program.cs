@@ -4,6 +4,7 @@ using Hometask._18_09_2023;
 using Hometask._19_09_2023;
 using Hometask._21_09_2023_Json_Xml;
 using Hometask._21_09_2023_Json_Xml.Models;
+using Hometask._21_09_2023_Json_Xml.Models.RedditModels;
 using Hometask.Collections;
 using Newtonsoft.Json;
 using System.Text.Json.Serialization;
@@ -84,9 +85,13 @@ foreach(var speaker in meeting.Speakers)
 }*/
 
 //json file ichidagi html degan joyiga exception beryapti. iframe ni qoldirib ishladim
-json = ConnectionString.GetJsonString(@"JSON-files\htmlresponse.json");
+/*json = ConnectionString.GetJsonString(@"JSON-files\htmlresponse.json");
 var response = JsonConvert.DeserializeObject<HtmlResponse>(json);
-Console.WriteLine(response.Preview.Url);
+Console.WriteLine(response.Preview.Url);*/
+
+json = ConnectionString.GetJsonString(@"JSON-files\AskReddit.json");
+var result = JsonConvert.DeserializeObject<AskReddit>(json);
+Console.WriteLine(result.data);
 
 /*string xml = ConnectionString.GetXmlString(@"XML -files\XmlData.xml");
 var serializer = new XmlSerializer(typeof(EVENT));
