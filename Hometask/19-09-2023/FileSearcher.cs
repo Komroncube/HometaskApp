@@ -8,14 +8,23 @@ namespace Hometask._19_09_2023
 {
     public class FileSearcher
     {
-        public void GetPathOfFile()
+        public void GetPathOfFile(string getfolder)
         {
-            Console.Write("File nomini kiriting: ");
+            //Console.Write("File nomini kiriting: ");
 
-            string file = Console.ReadLine();
-            if(file.Split('.').Length==2)
+            DriveInfo[] drives = DriveInfo.GetDrives();
+
+            foreach (DriveInfo drive in drives)
             {
-                if (SearchInDir("D:\\", file))
+                if (SearchInDir(drive.Name, getfolder))
+                {
+                    return;
+                }
+
+            }
+            /*if (file.Split('.').Length==2)
+            {
+                /*if (SearchInDir("D:\\", getfolder))
                 {
                     return;
                 }
@@ -29,7 +38,8 @@ namespace Hometask._19_09_2023
                     }
                     
                 }
-            }
+            }*/
+
         }
         private bool SearchInDir(string path, string file)
         {
